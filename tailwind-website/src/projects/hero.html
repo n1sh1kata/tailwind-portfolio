@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/tailwind-website/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body class="flex flex-col items-center bg-gray-50 dark:bg-slate-900 bg-customPattern">
+
+    <div class="relative w-screen h-screen pattern">
+
+        <!-- main container-->
+        <div class="w-full h-full">
+            <!-- section container -->
+            <!-- flex flex-col items-center justify-center -->
+            <div class="w-full h-full overflow-auto snap-mandatory snap-y scroll-smooth">
+
+                <section class="w-full h-full flex p-4 px-10 snap-center
+                lg:flex-row xxs:flex-col">
+
+                    <div class="w-full h-full flex flex-col items-center justify-center p-4">
+
+                        <div class="w-full h-full flex flex-col items-center justify-center">
+
+                            <div class="w-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Logo.png')] bg-contain bg-center bg-no-repeat
+                                lg:h-[300px] xxs:h-[200px]">
+                            </div>
+
+                            <h2 class="font-raleway text-2xl text-center italic text-[#050912]">"Ride the waves of life
+                                and
+                                sip
+                                the calm,<br>one cup at a time at Surf It Coffee."</h2>
+                        </div>
+
+                        <div class="w-full h-[100px] flex flex-row items-center justify-center gap-4">
+                            <a href="#services"
+                                class="bg-[#050912] text-lg text-white font-bold rounded-md hover:bg-[#033855] px-4 py-2">Services</a>
+                            <a href="#menu"
+                                class="bg-[#050912] text-lg text-white font-bold rounded-md hover:bg-[#033855] px-4 py-2">Menu</a>
+                            <a href="#contact"
+                                class="bg-[#050912] text-lg text-white font-bold rounded-md hover:bg-[#033855] px-4 py-2">Contact</a>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-row h-full w-full rounded-md overflow-hidden">
+                        <div
+                            class="flex-grow transition-all duration-300 hover:flex-grow-[3] h-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Service1.jpg')] bg-cover bg-center">
+                        </div>
+                        <div
+                            class="flex-grow transition-all duration-300 hover:flex-grow-[3] h-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Service2.jpg')] bg-cover bg-center">
+                        </div>
+                        <div
+                            class="flex-grow transition-all duration-300 hover:flex-grow-[3] h-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Service3.jpg')] bg-cover bg-center">
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <section class="w-full h-full flex flex-col gap-10 p-4 px-10 snap-center" id="services">
+
+                    <h1 class="text-4xl text-[#050912] w-full font-bold text-right">Services</h1>
+
+                    <div class="w-full h-full flex items-center justify-center gap-4
+                    lg:flex-row xxs:flex-col">
+
+                        <div class="flex-grow h-full flex flex-col items-center justify-center gap-4 w-full">
+                            <h1 class="text-2xl text-center text-[#050912]">Coffee</h1>
+                            <div
+                                class="h-full w-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Service1.jpg')] bg-cover bg-center rounded-md">
+                            </div>
+                        </div>
+                        <div class="flex-grow h-full flex flex-col items-center justify-center gap-4 w-full">
+                            <h1 class="text-2xl text-center text-[#050912]">Waffles</h1>
+                            <div
+                                class="h-full w-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Service2.jpg')] bg-cover bg-center rounded-md">
+                            </div>
+                        </div>
+                        <div class="flex-grow h-full flex flex-col items-center justify-center gap-4 w-full">
+                            <h1 class="text-2xl text-center text-[#050912]">Cookies</h1>
+                            <div
+                                class="h-full w-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Service3.jpg')] bg-cover bg-center rounded-md">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <section class="w-full h-full flex flex-col gap-4 p-4 px-10 snap-center" id="menu">
+
+                    <h1 class="text-4xl text-[#050912] w-full font-bold text-right">Menu</h1>
+
+                    <div class="flex flex-row h-full w-full gap-4 items-center justify-center">
+                        <div class="flex flex-row h-full
+                        xl:w-[70%] xxs:w-[100%]">
+                            <div
+                                class="h-full w-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Menu1.jpg')] bg-contain bg-center bg-no-repeat">
+                            </div>
+                            <div
+                                class="h-full w-full bg-[url('/tailwind-website/src/assets/images/SurfIt-Menu2.jpg')] bg-contain bg-center bg-no-repeat">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="w-full h-full flex flex-col gap-4 p-4 px-10 snap-center" id="contact">
+
+                    <h1 class="text-4xl text-[#050912] w-full font-bold text-right">Contact Us</h1>
+
+                    <div class="w-full h-full flex flex-col items-center justify-center gap-4 p-4 px-10">
+
+                        <div
+                            class="flex-grow w-[300px] bg-[url('/tailwind-website/src/assets/images/SurfIt-Logo.png')] bg-contain bg-center bg-no-repeat">
+                        </div>
+
+                        <form class="flex-grow flex flex-col gap-4 items-center justify-center
+                        xl:w-[50%] xxs:w-[100%] xl:h-[50%] xxs:h-[30%]">
+                            <label class="text-lg text-left text-[#050912] w-full">Subject:</label>
+                            <input
+                                class="w-full h-10 pl-2 text-lg text-left text-[#050912] bg-gray-50 dark:bg-slate-900 border border-gray-300 dark:border-slate-700 rounded-md"
+                                type="text" placeholder="Enter your subject">
+
+                            <label class="text-lg text-left text-[#050912] w-full">Body:</label>
+                            <textarea
+                                class="w-full h-40 pl-2 text-lg text-[#050912] bg-gray-50 dark:bg-slate-900 border border-gray-300 dark:border-slate-700 rounded-md"
+                                placeholder="Enter your message"></textarea>
+
+                            <button
+                                class="w-full h-10 bg-[#050912] text-lg text-white font-bold rounded-md hover:bg-[#033855]">Send
+                                Email</button>
+                        </form>
+
+                        <div class="flex-grow flex flex-row items-center justify-center gap-4">
+                            <a href="https://web.facebook.com/Surfitcoffee"
+                                class="flex flex-row items-center justify-center gap-4">
+                                <i class="fa-brands fa-facebook-f text-3xl text-[#050912]"></i>
+                                <p class="text-lg text-[#050912]">Follow us on Facebook!</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

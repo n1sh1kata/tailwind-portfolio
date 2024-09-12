@@ -1,16 +1,36 @@
 /** @type {import('tailwindcss').Config} */
+
+const blueColor = '#f9f9f9';
+const greyColor = '#fff';
+
 module.exports = {
   content: [
     './src/**/*.{html,js}',
   ],
   theme: {
     extend: {
+      screens: {
+        'xxs': '320px',
+        'xs': '375px',
+        sm: '425px', // Small breakpoint
+        md: '768px', // Medium breakpoint
+        lg: '1024px', // Large breakpoint
+        xl: '1440px', // Extra large breakpoint
+        '2xl': '1536px', // 2x extra large breakpoint
+      },
+      flexGrow: {
+        3: '3'
+      },
+      aspectRatio: {
+        '10/2': '10 / 2',
+      },
       colors: {
         primary: '#1da1f2', // Custom blue
         secondary: '#14171a', // Custom dark gray
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'], // Adding Roboto as the default sans font
+        sans: ['Roboto', 'sans-serif'], // Keep Roboto as the default sans font
+        raleway: ['Raleway', 'sans-serif'], // Add Raleway as a custom font
       },
       keyframes: {
         bounce: {
@@ -76,6 +96,9 @@ module.exports = {
           },
         },
       },
+      scrollBehavior: {
+        smooth: 'smooth',
+      },
       animation: {
         bounce: 'bounce 1s infinite', // Defining the bounce animation
         spin: 'spin 2s linear infinite', // Defining the spin animation
@@ -92,6 +115,23 @@ module.exports = {
       },
       variants: {
         animation: ['hover', 'focus'],
+      },
+      backgroundImage: {
+        customPattern: [
+          `conic-gradient(from -45deg at calc(100%/3) calc(100%/3), ${greyColor} 90deg, #0000 0)`,
+          `conic-gradient(from -135deg at calc(100%/3) calc(2*100%/3), ${greyColor} 90deg, ${blueColor} 0 135deg, #0000 0)`,
+          `conic-gradient(from 135deg at calc(2*100%/3) calc(2*100%/3), ${greyColor} 90deg, ${blueColor} 0 135deg, #0000 0)`,
+          `conic-gradient(from 45deg at calc(2*100%/3) calc(100%/3), ${greyColor} 90deg, ${blueColor} 0 135deg, #0000 0, ${greyColor} 0 225deg, ${blueColor} 0)`,
+        ],
+      },
+      backgroundSize: {
+        customPattern: '100px 100px',
+      },
+      transitionDuration: {
+        300: '300ms',
+      },
+      transitionProperty: {
+        width: 'width',
       },
     },
   },
